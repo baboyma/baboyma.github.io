@@ -1,0 +1,23 @@
+<!-- Home - Blogs -->
+<section id="home-blogs" class="section">
+    <div class="container">
+        <div class="content is-12 has-text-centered">
+            <h1 class="title is-uppercase">Recent Blogs</h1>
+            <hr class="header-underline">
+            <p class="">Here are some of our recent blogs</p>
+
+        </div>
+        <div class="columns is-multiline">
+            {% for post in site.posts %}
+            <div class="column is-12-mobile is-6-tablet is-4-desktop has-text-centered">
+                <h2 class="title">{{post.title}}</p>
+                <p class="subtitle">{{post.description}}</p>
+                <a href="{{ site.baseurl }}{{ post.url }}">Read details</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="content has-text-centered">
+            <a class="button is-link" href="/blogs/">Read More</a>
+        </div>
+    </div>
+</section>

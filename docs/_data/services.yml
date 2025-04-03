@@ -1,0 +1,27 @@
+title: "Expertise & Services"
+description: "We mainly offer these services offered but remain open to other opportunities"
+services:
+  - name: ds
+    icon: "fa-solid fa-chart-simple"
+    title: "Data Science"
+    description: "Development of methods and algorithms to extract actionable insights and optimize business processes"
+  - name: ai
+    icon: "fa-solid fa-robot"
+    title: "AI & ML Solutions"
+    description: "Development and Maintenance of AI and ML solutions for various industries"
+  - name: gis
+    icon: "fa-solid fa-earth-americas"
+    title: "Geospatial Information Systems"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  - name: dev
+    icon: "fa-solid fa-server"
+    title: "Applications Development"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  - name: pm
+    icon: "fa-solid fa-chart-gantt"
+    title: "Projects Management"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  - name: cbt
+    icon: "fa-solid fa-tv"
+    title: "Consultations & Trainings"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"

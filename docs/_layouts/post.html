@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<!-- Post - Banner -->
+<section id="post-banner" class="hero page-banner is-halfheight is-secondary is-bold">
+    <div class="hero-body has-background-secondary">
+        <div class="container">
+            <div class="content is-12">
+                <p class="title">BLOG - {{page.title}}</p>
+                <p class="subtitle">{{page.description}}</p>
+                <p class="subtitle">Published by {{page.author | default: "N/A"}} on {{page.date}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Post - Content -->
+<section id="post-section" class="hero is-halfheight is-secondary is-bold">
+    <div class="hero-body has-background-secondary">
+        <div class="container">
+            <div class="content is-12">
+                {{content}}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+#!/docs/_data/navigation.yml
+# Navigation structure for the site
+main:
+  - name: Home
+    url: /
+  - name: About
+    url: /#home-about
+  - name: Services
+    url: /#home-services
+  - name: Projects
+    url: /#home-projects
+  - name: Blogs
+    url: /blogs/
+  - name: Contact
+    url: /#home-contact
+
+exclude: ["Home", "Contact"]

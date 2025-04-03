@@ -1,0 +1,30 @@
+# /docs/_data/projects.yml
+# # Projects configuration for baboyma.github.io
+
+title: "Works & Projects"
+description: "A collection of some recently completed projects and works that showcase my skills and expertise."
+projects:
+  - name: Project One
+    title: "Project One"
+    description: A brief description of the project.
+    url: https://github.com/baboyma/project-one
+  - name: Project Two
+    title: "Project Two"
+    description: Another project description.
+    url: https://github.com/baboyma/project-two
+  - name: Project Three
+    title: "Project Three"
+    description: Yet another project description.
+    url: https://github.com/baboyma/project-three
+  - name: Project Four
+    title: "Project Four"
+    description: A brief description of the project.
+    url: https://github.com/baboyma/project-four
+  - name: Project Five
+    title: "Project Five"
+    description: Another project description.
+    url: https://github.com/baboyma/project-five
+  - name: Project Six
+    title: "Project Six"
+    description: Yet another project description.
+    url: https://github.com/baboyma/project-six

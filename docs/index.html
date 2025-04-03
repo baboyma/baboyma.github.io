@@ -1,1 +1,163 @@
-<p>Welcome to my World!</p>
+---
+layout: default
+title: Home
+---
+
+<!-- Home - Banner -->
+<section id="home-banner" class="hero page-banner is-fullheight is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content is-12">
+                <p class="title is-uppercase">Data Analytics Consulting Services</p>
+                <!-- <p class="title">"The best services your company can get"</p> -->
+                <button class="button is-info">Contact me for details!</button>
+                <div class="bubblee"></div>
+                <div class="bubblee" style="top: 20px; left: 20px;"></div>
+                <div class="bubblee" style="top: 40px; left: 40px;"></div>
+            </div>
+
+        </div>
+        <div class="content social profile-social">
+            <a href="{{site.data.profile.repo.url}}" class="button is-light" target="_blank">
+                <span class="icon">
+                    <i class="{{site.data.profile.repo.icon}} fa-2x"></i>
+                </span>
+            </a>
+            {% for s in site.data.profile.social %}
+            <a href="{{s.url}}" class="button is-light" target="_blank">
+                <span class="icon">
+                    <i class="{{s.icon}} fa-2x"></i>
+                </span>
+            </a>
+            {% endfor %}
+            <a href="mailto:{{site.data.profile.email.label}}" class="button is-light" target="_blank">
+                <span class="icon">
+                    <i class="{{site.data.profile.email.icon}} fa-2x"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Home - About US -->
+<section id="home-about" class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-4">
+                <img class="image profile-cover" src="/assets/img/{{ site.data.profile.pictures.cover }}" alt="cover" class="cover">
+            </div>
+            <div class="column has-text-justified">
+                <p class="title"><i class="fa-solid fa-hands-asl-interpreting"></i> Hey there! I'm {{ site.data.profile.name.short }} <i class="fa-solid fa-hands-asl-interpreting"></i></p>
+                <p class="subtitle">,<br/>A {{ site.data.profile.title.future }} based in the {{ site.data.profile.location.label }}. {{ site.data.profile.summary }}</p>
+                <!-- <h1 class="title is-uppercase">{{ site.data.profile.header | capitalize }}</h1> -->
+                <!-- <p class="subtitle is-normal">{{ site.data.profile.summary }}</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+{% include divider.html %}
+
+<!-- Home - Services -->
+<section id="home-services" class="section">
+    <div class="container">
+        <div class="content is-12 has-text-centered">
+            <h1 class="title is-uppercase">{{ site.data.services.title | capitalize }}</h1>
+            <hr class="header-underline">
+            <p class="subtitle is-normal">{{ site.data.services.description }}</p>
+        </div>
+        <div class="columns is-multiline">
+            {% for svc in site.data.services.services %}
+            <div class="service-box column is-4 is-6-tablet is-12-mobile has-text-centered">
+                <i class="{{svc.icon}} fa-4x"></i>
+                <h1 class="title">{{svc.title}}</h1>
+                <p class="subtitle">{{svc.description}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Home - Skillset -->
+{% include skillset.html %}
+
+<!-- Home - Projects -->
+<section id="home-projects" class="section">
+    <div class="container">
+        <div class="content is-12 has-text-centered">
+            <h1 class="title">{{ site.data.projects.title | capitalize }}</h1>
+            <hr class="header-underline">
+            <p class="subtitle is-normal">{{ site.data.projects.description }}</p>
+        </div>
+        <div class="columns is-multiline">
+            {% for pro in site.data.projects.projects %}
+            <div class="project-box column is-12-mobile is-6-tablet is-4-desktop has-text-centered">
+                <h2 class="title">{{pro.title}}</p>
+                <p class="subtitle">{{pro.description}}</p>
+                <a class="button is-link" href="{{pro.url}}" target="_blank" >Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+{% include divider.html %}
+
+<!-- Home - Clients -->
+<section id="home-clients" class="section"></section>
+    <div class="container">
+        <div class="content is-12 has-text-centered">
+            <h1 class="title is-uppercase">Clients</h1>
+            <hr class="header-underline">
+            <p class="subtitle is-normal">I have worked with some amazing clients</p>
+        </div>
+        <div class="content images-clients">
+            <div class="images-banner">
+                <img src="/assets/img/clients/umd_logos-primary.png">
+                <img src="/assets/img/clients/start_logo.png">
+                <img src="/assets/img/clients/ATAC.png">
+                <img src="/assets/img/clients/univ_logo_header_en.png">
+                <img src="/assets/img/clients/GM_univ_logo.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home - Blogs -->
+{% include blogs_recent.html %}
+
+<!-- Home - Contacts -->
+<section id="home-contact" class="section">
+    <div class="container">
+        <div class="content is-12 has-text-centered">
+            <h1 class="title">Contact</h1>
+            <hr class="header-underline">
+            <p class="subtitle is-normal">Have questions / needs? Get in touch with me</p>
+        </div>
+        <div class="content is-12">
+            <form action="" method="post">
+                <div class="field">
+                    <label for="name" class="label has-text-weight-light">
+                        Name:
+                    </label>
+                    <input type="text" name="name" id="name" class="input">
+                </div>
+                <div class="field">
+                    <label for="email" class="label has-text-weight-light">
+                        Email:
+                    </label>
+                    <input type="email" name="email" id="email" class="input">
+                </div>
+                <div class="field">
+                    <label for="message" class="label has-text-weight-light">
+                        Message:
+                    </label>
+                    <textarea name="message" id="message" rows="5" class="textarea is-large"></textarea>
+                </div>
+                <button type="submit" class="button is-success is-size-8">Send message</button>
+            </form>
+        </div>
+    </div>
+</section>

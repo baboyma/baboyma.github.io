@@ -1,0 +1,78 @@
+# Profile configuration for baboyma.github.io
+header: About Me
+name:
+  full: Baboyma Kagniniwa
+  short: Baboyma
+  nikenames: [Babo, BK, B., Jacques]
+pictures:
+  avatar: "profile.jpg"
+  cover: "water-jar.jpg"
+  logo: "bervices_white.png"
+  profile: "profile.jpg"
+  background: "background.jpg"
+  background2: "https://images.unsplash.com/photo-1619252584172-a83a949b6efd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  background3: "https://images.unsplash.com/photo-1600172454520-134a542a2255?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+tagline: "Data Scientist | Software Engineer | Open Source Contributor"
+quote: "Data is the new oil, and I am the miner."
+quote_author: "Baboyma Kagniniwa"
+bio: "Passionate about coding, open-source, and building impactful projects."
+description: "Data & Software Enginnering, Data Science, Machine Learning, Geospatial Information Science"
+greetings: "Hello, I'm Baboyma Kagniniwa - a Data Scientist based in the DMV area."
+summary: I have over 15 years of experience in data engineering, data science, geospatial analytics, and software development.
+Summary2: A proven expertise in data modeling, ETL Pipelines, data visualization, and machine learning techniques
+image: /assets/img/profile.png
+site: https://baboyma.github.io
+title:
+  current: Data Scientist
+  previous: Software Developer
+  future: Data & Software Engineer
+repo:
+  icon: fab fa-github
+  url: "https://github.com/baboyma"
+  site: "https://baboyma.github.io"
+location:
+  icon: fa-solid fa-location-dot
+  label: "DMV Area, United States"
+  name: "United States"
+email:
+  icon: fa-solid fa-envelope
+  label: "info@bervices.dev"
+phone:
+  icon: fa-solid fa-phone
+  label: "+1 (123) 456-7890"
+legal:
+  icon: fa-solid fa-scale-balanced
+  label: "Terms & Conditions"
+  url: "/terms/"
+skillset:
+  title: "Technical<br/>Skills"
+  description: "A collection of my skills and expertise."
+  skills:
+    software:
+      name: "Software Development"
+      description: "Development of software applications and systems."
+      tools:
+        - Programming Languages: [Python, PHP, SQL, JavaScript, HTML, CSS]
+        - Frameworks: [React, NodeJS, Django, Flask, FastAPI, Drupal, Wordpress]
+        - Databases: [SQLServer, Oracle, PostgreSQL, MySQL, SQLite, MongoDB, DuckDB]
+        - Tools & DevOps: [Git/Github, Docker, Jenkins, Travis CI, Jira, Azure DevOps]
+        - Cloud Computing: [AWS, GCP, Azure]
+    data:
+      name: "Data Science & Engineering"
+      description: "Development of methods and algorithms to extract actionable insights and optimize business processes."
+      tools:
+        - Data Science: [R, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Scikit-learn, TensorFlow, PyTorch]
+        - Data Engineering: [Apache Airflow, Apache Spark, Apache Kafka, Tableau Prep, Azure Data Factory]
+        - Data Visualization: [Tableau, Power BI, ggplot2, Plotly, Matplotlib, Seaborn]
+        - Geospatial: [QGIS, ArcGIS, GeoPandas, Folium]
+
+social:
+  - name: linkedin
+    icon: fab fa-linkedin
+    url: "https://www.linkedin.com/in/67a2ab23"
+  - name: twitter
+    icon: fab fa-twitter
+    url: "https://twitter.com/baboyma"
+  - name: medium
+    icon: fab fa-medium
+    url: "https://medium.com/@baboyma"

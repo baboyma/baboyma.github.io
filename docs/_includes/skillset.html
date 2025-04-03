@@ -1,0 +1,48 @@
+<section class="home-skillset section has-background-primary">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-2 has-text-upright has-text-centered is-vcentered">
+                <h1 class="title is-5 is-uppercase">{{ site.data.profile.skillset.title | capitalize }}</h1>
+            </div>
+            <div class="column is-10">
+                <div class="columns is-multiline">
+                    <div class="column is-6">
+
+                        <!-- <p class="title">{{ site.data.profile.skillset.skills.software.name }}</p> -->
+
+                        {% for cats in site.data.profile.skillset.skills.software.tools %}
+
+                            {% for cat in cats %}
+                                <p class="has-text-left">
+                                    {{ cat[0] }}<br/>
+                                    {% for t in cat[1] %}
+                                        <span class="tag">{{ t }}</span>
+                                    {% endfor %}
+                                </p>
+                            {% endfor %}
+
+                        {% endfor %}
+                    </div>
+
+                    <div class="column is-6">
+
+                        <!-- <p class="title">{{ site.data.profile.skillset.skills.data.name }}</p> -->
+
+                        {% for cats in site.data.profile.skillset.skills.data.tools %}
+
+                            {% for cat in cats %}
+                                <p class="has-text-right">
+                                    {{ cat[0] }}<br/>
+                                    {% for t in cat[1] %}
+                                        <span class="tag">{{ t }}</span>
+                                    {% endfor %}
+                                </p>
+                            {% endfor %}
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

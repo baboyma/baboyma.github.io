@@ -1,1 +1,86 @@
-theme: jekyll-theme-slate
+name: "Personal Portfolio"
+title: "BERVICES"
+description: "Data Management & Analytics Consulting Services"
+url: "https://baboyma.github.io"
+baseurl: ""
+source: .
+destination: ./_site
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+sass:
+  style: compressed
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - node_modules
+    - vendor
+plugins_dir: _plugins
+assets_dir: assets
+#collections_dir: _collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title
+  projects:
+    output: true
+    permalink: /projects/:title
+
+repo:
+  icon: fab fa-github
+  url: "https://github.com/baboyma"
+  site: "https://baboyma.github.io"
+
+social:
+  - name: linkedin
+    icon: fab fa-linkedin
+    url: "https://www.linkedin.com/in/baboyma"
+  - name: twitter
+    icon: fab fa-twitter
+    url: "https://twitter.com/baboyma"
+  - name: medium
+    icon: fab fa-medium
+    url: "https://medium.com/@baboyma"
+
+
+owner:
+  name: "Baboyma Kagniniwa"
+  avatar: "/assets/img/profile.png"
+  bio: "Passionate about coding, open-source, and building impactful projects."
+  location:
+    icon: fa-solid fa-location-dot
+    label: "DMV, United States"
+  email:
+    icon: fa-solid fa-envelope
+    label: "info@bervices.dev"
+  phone:
+    icon: fa-solid fa-phone
+    label: "+1 (123) 456-7890"
+  legal:
+    icon: fa-solid fa-scale-balanced
+    label: "Terms & Conditions"
+    url: "/terms/"
+
+
+#theme: jekyll-theme-slate
+#remote_theme: ""
+
+markdown: kramdown
+paginate: 5
+paginate_path: "/blogs/page:num/"
+
+plugins:
+  - github-pages
+  #- jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-avatar
+  #- jekyll-mentions
+  #- jekyll-remote-theme
+  - kramdown-parser-gfm
+
+placeholder:
+  short: "Lorem ipsum dolor sit amet"
+  medium: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

@@ -1,0 +1,18 @@
+<section class="section is-medium has-background-light">
+    <div class="container has-text-centered">
+        <h1 class="title">{{ include.title | capitalize }}</h1>
+        <p class="subtitle">{{ include.description }}</p>
+        {% if include.quote == true %}
+        <button class="button is-link is-outlined">Request a Consultation</button>
+        {% else %}
+            <div class="content has-text-centered">
+                <div class="buttons">
+                    <button class="button is-skeleton">Data</button>
+                    <button class="button is-link is-skeleton">Insights</button>
+                    <button class="button is-primary is-skeleton">Applications</button>
+                    <button class="button is-success is-skeleton">Decisions</button>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>

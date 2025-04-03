@@ -1,0 +1,71 @@
+<footer class="footer has-background-light has-text-light">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-6">
+
+                <a class="is-inline-block" href="/">
+                    <img src="/assets/img/bervices_burgaindy.png" alt="" width="50%"/>
+                </a>
+
+                <p class="subtitle">{{site.description}}</p>
+
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Subscribe to our newsletter">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-info">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <a href="{{site.repo.url}}" class="button is-light" target="_blank">
+                        <span class="icon">
+                            <i class="{{site.repo.icon}} fa-2x"></i>
+                        </span>
+                    </a>
+                    {% for s in site.social %}
+                    <a href="{{s.url}}" class="button is-light" target="_blank">
+                        <span class="icon">
+                            <i class="{{s.icon}} fa-2x"></i>
+                        </span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column has-text-info">
+                <h3 class="title is-4">Menu</h3>
+                <ul class="list">
+                    {% for item in site.data.navigation.main %}
+                        {% if item.name != site.data.navigation.exclude.first and item.name != site.data.navigation.exclude.last %}
+                        <li class="list-item">
+                            <a class="" href="{{ item.url }}">{{ item.name | capitalize }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="column has-text-info">
+                <h3 class="title is-4">Contact</h3>
+                <ul class="list">
+                    <li class="list-item"><i class="{{ site.owner.phone.icon }}"></i> <a href="tel:{{ site.owner.phone.label }}">{{ site.owner.phone.label }}</a></li>
+                    <li class="list-item"><i class="{{ site.owner.email.icon }}"></i> <a href="mail:{{ site.owner.email.label }}">{{ site.owner.email.label }}</a></li>
+                    <li class="list-item"><i class="{{ site.owner.location.icon }}"></i> <a href="https://google.com/maps?{{ site.owner.location.label }}" target="_blank">{{ site.owner.location.label }}</a></li>
+                    <li class="list-item"><i class="{{ site.owner.legal.icon }}"></i> <a href="{{ site.owner.legal.url }}">{{ site.owner.legal.label }}</a></li>
+                </ul>
+            </div>
+            <div class="column is-12">
+                <hr>
+                <p class="has-text-centered has-text-dark">
+                    &copy; {{site.title}} {{ "now" | date: "%Y" }}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
