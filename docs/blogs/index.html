@@ -15,3 +15,56 @@ description: Some of our most recent blog posts
         </div>
     </div>
 </section>
+
+<!-- Home - Blogs -->
+<section id="home-blogs" class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+
+            <div class="column is-12 has-text-centered">
+                <h1 class="title is-uppercase">Recent Blogs</h1>
+                <hr class="header-underline">
+                <p class="">Here are some of our recent blogs</p>
+            </div>
+
+            <div class="column is-4 blogs-sidebar">
+                <h2 class="title is-uppercase"><i class="fa-regular fa-folder-open"></i> Categories</h2>
+
+                <ul class="subtitle is-6 blogs-categories">
+                    {% for cat in site.categories %}
+                    <li class="blogs-category"><span class="tag is-black is-light">xxxxx</span></li>
+                    {% endfor %}
+                </ul>
+
+                <h2 class="title is-uppercase"><i class="fa-solid fa-tags"></i> Tags</h2>
+
+                <p class="subtitle is-6">
+                    {% for tag in site.tags %}
+                    <span class="tag is-info is-light">xxxxx</span>
+                    {% endfor %}
+                </p>
+
+                <div class="content is-light">
+                    <a class="button is-link" href="/blogs/all">Load More</a>
+                </div>
+            </div>
+
+            <div class="column is-8 blogs-list">
+                <ul class="timeline_posts">
+                    {% for post in site.posts limit: 10 %}
+                    <li class="timeline_post">
+                        <div class="timeline_date" date="{{post.date | date: '%m-%d-%Y'}}"><span><i class="fa-solid fa-calendar"></i> {{post.date | date: '%m-%d-%Y'}}</span></div>
+                        <time class="timeline_icon"><i class="fa-solid fa-grip-lines fa-2x"></i> </time>
+                        <!-- <div class="timeline_icon"></div> -->
+                        <div class="timeline_content">
+                            <h2>{{post.title}}</h2>
+                            <p>{{post.description}}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>

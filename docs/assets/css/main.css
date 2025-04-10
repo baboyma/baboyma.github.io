@@ -157,3 +157,134 @@ hr.header-underline {
       transform: translate(-50%, 0);
   }
 }
+
+/* Timeline */
+ul.timeline_posts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+/* Timeline - center line */
+ul.timeline_posts:before {
+	content: '';
+	position: absolute;
+  width: 10px;
+	top: 0;
+  right: auto;
+	bottom: 0;
+	left: 20%;
+  margin-left: -10px;
+	background: #afdcf8;
+}
+
+/* Timeline - the posts */
+ul.timeline_posts > li {
+	position: relative;
+}
+
+/* The date/time */
+ul.timeline_posts > li .timeline_date {
+	display: block;
+  position: absolute;
+  left: 0;
+}
+
+/* The date/time */
+ul.timeline_posts > li .timeline_icon {
+	display: block;
+  position: absolute;
+  left: 20%;
+	margin-left: -1.2em;
+  color: #afdcf8;
+}
+
+/* .timeline_posts > li .timeline_time span {
+	display: block;
+	text-align: right;
+} */
+
+/* .timeline_posts > li .timeline_time span:first-child {
+	font-size: 0.9em;
+	color: #bdd0db;
+}
+
+.timeline_posts > li .timeline_time span:last-child {
+	font-size: 1.5em;
+	color: #3594cb;
+}
+
+.timeline_posts > li:nth-child(odd) .timeline_time span:last-child {
+	color: #6cbfee;
+} */
+
+/* Right content */
+.timeline_posts > li .timeline_content {
+  position: relative;
+	margin: 0 0 15px 25%;
+  padding: 1em;
+  color: #fff;
+	background: #3594cb;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	border-radius: 5px;
+}
+
+.timeline_posts > li:nth-child(odd) .timeline_content {
+	background: #6cbfee;
+}
+
+.timeline_posts > li .timeline_content h2 {
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Timeline - the triangle */
+.timeline_posts > li .timeline_content:after {
+  content: " ";
+  position: absolute;
+  height: 0;
+	width: 0;
+  top: 10px;
+	right: 100%;
+	border: solid transparent;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+}
+
+.timeline_posts > li:nth-child(odd) .timeline_content:after {
+	border-right-color: #6cbfee;
+}
+
+/* The icons */
+.timeline_posts > li .timeline_time {
+
+}
+
+/*
+.timeline_posts > li .timeline_time {
+	width: 20px;
+	height: 20px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #fff;
+	background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #afdcf8;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+} */

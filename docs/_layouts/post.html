@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Blog
 ---
 
 <!-- Post - Banner -->
@@ -7,17 +8,40 @@ layout: default
     <div class="hero-body has-background-secondary">
         <div class="container">
             <div class="content is-12">
-                <p class="title">BLOG - {{page.title}}</p>
-                <p class="subtitle">{{page.description}}</p>
-                <p class="subtitle">Published by {{page.author | default: "N/A"}} on {{page.date}}</p>
+                <p class="title">BLOG - {{page.title | upcase}}</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Post - Header -->
+<section id="post-header" class="is-secondary is-bold">
+    <div class="container">
+        <div class="content is-12 my-5">
+            <p class="title">{{page.title}}</p>
+            <p class="subtitle">{{page.description}}</p>
+
+            <hr>
+            <p class=""><i class="fa-regular fa-circle-user"></i> {{page.author | default: "N/A"}} <i class="fa-regular fa-clock"></i> {{page.date | date: '%B %d, %Y'}}</p>
+
+            <p class="subtitle is-6">
+                <i class="fa-regular fa-folder-open"></i>
+                {% for category in page.categories %}
+                <span class="tag is-black is-light">{{category}} </span>
+                {% endfor %}
+
+                <i class="fa-solid fa-tags"></i>
+                {% for tag in page.tags %}
+                <span class="tag is-info is-light">{{tag}} </span>
+                {% endfor %}
+            </p>
+            <hr>
+        </div>
+    </div>
+</section>
 
 <!-- Post - Content -->
-<section id="post-section" class="hero is-halfheight is-secondary is-bold">
+<section id="post-content" class="is-halfheight is-secondary is-bold">
     <div class="hero-body has-background-secondary">
         <div class="container">
             <div class="content is-12">

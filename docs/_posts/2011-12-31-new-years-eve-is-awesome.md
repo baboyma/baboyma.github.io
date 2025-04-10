@@ -2,6 +2,10 @@
 layout: post
 title: "Welcome to Jekyll!"
 description: "Blogging instructions"
+author: {{site.data.profile.name.full}}
+tags: [blog, jekyll]
+categories: [blog]
+date: 2011-12-31
 ---
 
 # Welcome

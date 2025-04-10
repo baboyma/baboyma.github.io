@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Transitioning from AID Work"
-description: "USAID - my contributions to development projects"
+title:  "Transitioning out of International Development"
+description: "USAID - My contributions to international development"
 summary: ""
 author: "Baboyma Kagniniwa"
 date: "2025-03-01"
-categories: [news]
-tags: [jekyll, web, static, blog]
+categories: [government, development]
+tags: [USAID, FTF, PEPFAR, GIS, M&E]
 ---
