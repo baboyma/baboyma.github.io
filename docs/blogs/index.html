@@ -1,7 +1,9 @@
 ---
 layout: default
-title: BLOGS
-description: Some of our most recent blog posts
+title: Our world is digital
+subtitle: Decoding the digital world, one blog at a time.
+header: Our recent blogs
+description: Transforming data into insights, with the magic of artificial intelligence.
 ---
 
 <!-- Home - Banner -->
@@ -10,7 +12,7 @@ description: Some of our most recent blog posts
         <div class="container">
             <div class="content is-12">
                 <p class="title">{{ site.title }} - {{ page.title }}</p>
-                <p class="subtitle">{{ page.description }}</p>
+                <p class="subtitle">{{ page.subtitle }}</p>
             </div>
         </div>
     </div>
@@ -22,27 +24,28 @@ description: Some of our most recent blog posts
         <div class="columns is-multiline">
 
             <div class="column is-12 has-text-centered">
-                <h1 class="title is-uppercase">Recent Blogs</h1>
+                <h1 class="title is-uppercase">{{ page.header }}</h1>
                 <hr class="header-underline">
-                <p class="">Here are some of our recent blogs</p>
+                <p class="subtitle is-4">{{ page.description }}</p>
             </div>
 
             <div class="column is-4 blogs-sidebar">
+
                 <h2 class="title is-uppercase"><i class="fa-regular fa-folder-open"></i> Categories</h2>
 
-                <ul class="subtitle is-6 blogs-categories">
+                <div class="blogs-categories tags">
                     {% for cat in site.categories %}
-                    <li class="blogs-category"><span class="tag is-black is-light">xxxxx</span></li>
+                        <span class="tag is-black is-light">xxxxx</span>
                     {% endfor %}
-                </ul>
+                </div>
 
                 <h2 class="title is-uppercase"><i class="fa-solid fa-tags"></i> Tags</h2>
 
-                <p class="subtitle is-6">
-                    {% for tag in site.tags %}
-                    <span class="tag is-info is-light">xxxxx</span>
+                <div class="blogs-tags tags">
+                    {% for cat in site.categories %}
+                        <span class="tag is-info is-light">xxxxx</span>
                     {% endfor %}
-                </p>
+                </div>
 
                 <div class="content is-light">
                     <a class="button is-link" href="/blogs/all">Load More</a>
