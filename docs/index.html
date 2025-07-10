@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Home
+title: Data Analytics Consulting Services
+subtitle: Efficient Data & Analytics Solutions for a fast growing digital world
+header: Our world is digital
+description: Decoding the digital world, one blog at a time.
 ---
 
 <!-- Home - Banner -->
@@ -8,9 +11,9 @@ title: Home
     <div class="hero-body">
         <div class="container">
             <div class="content is-12">
-                <p class="title is-uppercase">Data Analytics Consulting Services</p>
+                <p class="title is-uppercase">{{ page.title }}</p>
                 <!-- <p class="title">"The best services your company can get"</p> -->
-                <button class="button is-info">Contact me for details!</button>
+                <button class="button is-info">Contact us for details</button>
                 <div class="bubblee"></div>
                 <div class="bubblee" style="top: 20px; left: 20px;"></div>
                 <div class="bubblee" style="top: 40px; left: 40px;"></div>
@@ -48,6 +51,7 @@ title: Home
             </div>
             <div class="column has-text-justified">
                 <p class="title"><i class="fa-solid fa-hands-asl-interpreting"></i> Hey there! I'm {{ site.data.profile.name.short }} <i class="fa-solid fa-hands-asl-interpreting"></i></p>
+                <p class="subtitle">{{ site.data.profile.tagline }}</p>
                 <p class="subtitle">A {{ site.data.profile.title.future }} based in the {{ site.data.profile.location.label }}. {{ site.data.profile.summary }}</p>
                 <!-- <h1 class="title is-uppercase">{{ site.data.profile.header | capitalize }}</h1> -->
                 <!-- <p class="subtitle is-normal">{{ site.data.profile.summary }}</p> -->
